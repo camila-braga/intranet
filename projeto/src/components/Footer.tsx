@@ -41,34 +41,34 @@ export default function CustomFooter() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-    <Box component="footer" sx={footerSx}>
-        <Typography sx={{ fontFamily: "'Montserrat', sans-serif", color: "#333333", fontSize: 24, fontWeight: 500, paddingX: "32px" }}>
-        Tecnologia da Informação | Copyright © 2025
-        </Typography>
+        <Box component="footer" sx={footerSx}>
+            <Typography sx={{ fontFamily: "'Montserrat', sans-serif", color: "#333333", fontSize: 24, fontWeight: 500, paddingX: "32px" }}>
+            Tecnologia da Informação | Copyright © 2025
+            </Typography>
 
-        <Box sx={{ display: "flex", gap: "81px", paddingX: "32px" }}>
-            {links.map((link, index) => (
-                <MuiLink
-                    key={link.href}
-                    href={link.href}
-                    sx={linkSx}
-                    underline="none"
-                    onMouseEnter={() => setHoveredIndex(index)}
-                    onMouseLeave={() => setHoveredIndex(null)}
-                    >
-                    <Image
-                        src={hoveredIndex === index ? link.iconWhite : link.iconDark}
-                        alt={link.label}
-                        width={20}
-                        height={17}
-                        style={{
-                            transition: "all 0.3s ease",
-                        }}
-                    />
-                    <span>{link.label}</span>
-                </MuiLink>
-            ))}
+            <Box sx={{ display: "flex", gap: "81px", paddingX: "32px" }}>
+                {links.map((link, index) => (
+                    <MuiLink
+                        key={link.href}
+                        href={link.href}
+                        sx={linkSx}
+                        underline="none"
+                        onMouseEnter={() => setHoveredIndex(index)}
+                        onMouseLeave={() => setHoveredIndex(null)}
+                        >
+                        <Image
+                            src={hoveredIndex === index ? link.iconWhite : link.iconDark}
+                            alt={link.label}
+                            width={20}
+                            height={17}
+                            style={{
+                                transition: "all 0.3s ease",
+                            }}
+                        />
+                        <span>{link.label}</span>
+                    </MuiLink>
+                ))}
+            </Box>
         </Box>
-    </Box>
     );
 }

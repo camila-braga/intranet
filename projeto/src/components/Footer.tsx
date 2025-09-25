@@ -51,23 +51,23 @@ export default function CustomFooter() {
         <Box sx={{ display: "flex", gap: "81px", paddingX: "32px" }}>
         {links.map((link, index) => (
             <MuiLink
-            key={link.href}
-            href={link.href}
-            sx={linkSx}
-            underline="none"
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            >
-            <Image
-                src={hoveredIndex === index ? link.iconWhite : link.iconDark}
-                alt={link.label}
-                width={20}
-                height={17}
-                style={{
-                    transition: "all 0.3s ease",
-                }}
-            />
-            <span>{link.label}</span>
+                key={link.href}
+                href={link.href}
+                sx={linkSx}
+                underline="none"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                >
+                <Image
+                    src={hoveredIndex === index ? link.iconWhite : link.iconDark}
+                    alt={link.label}
+                    width={20}
+                    height={17}
+                    style={{
+                        transition: "all 0.3s ease",
+                    }}
+                />
+                <span>{link.label}</span>
             </MuiLink>
         ))}
         </Box>

@@ -47,8 +47,8 @@ export default function MenuHeader() {
     color: "white",
     backgroundColor: "transparent",
     "&:hover": {
-    backgroundColor: "transparent",
-    color: "#495057", //secondary text
+      backgroundColor: "transparent",
+      color: "#495057", //secondary text
     },
   };
 
@@ -146,10 +146,7 @@ export default function MenuHeader() {
               ))}
             </Menu>
 
-            <Box sx={{ 
-                color: "white", 
-                fontSize: 28 
-              }}>
+            <Box sx={{ color: "white", fontSize: 28 }}>
               |
             </Box>
 
@@ -157,14 +154,12 @@ export default function MenuHeader() {
               href="http://central.rn.gov.br/admin/index.php?class=LoginForm&method="
               target="_blank"
               rel="noopener noreferrer"
-              color="inherit" >
+              color="inherit" 
+            >
               Agendamento gestor
             </Button>
 
-            <Box sx={{ 
-                color: "white", 
-                fontSize: 28 
-              }}>
+            <Box sx={{ color: "white", fontSize: 28 }}>
               |
             </Box>
 
@@ -172,7 +167,8 @@ export default function MenuHeader() {
               href="http://www.saude.rn.gov.br/"
               target="_blank"
               rel="noopener noreferrer"
-              color="inherit" >
+              color="inherit"
+            >
               SESAP
             </Button>
 

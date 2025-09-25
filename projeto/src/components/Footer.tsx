@@ -43,7 +43,7 @@ export default function CustomFooter() {
     return (
         <Box component="footer" sx={footerSx}>
             <Typography sx={{ fontFamily: "'Montserrat', sans-serif", color: "#333333", fontSize: 24, fontWeight: 500, paddingX: "32px" }}>
-            Tecnologia da Informação | Copyright © 2025
+                Tecnologia da Informação | Copyright © 2025
             </Typography>
 
             <Box sx={{ display: "flex", gap: "81px", paddingX: "32px" }}>

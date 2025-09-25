@@ -21,7 +21,6 @@ export default function MenuHeader() {
     setAnchorElCarreira(null);
   };
 
-  /*Para não ter que ficar repetindo esse sx em todos os itens do submenu*/
   const menuItemSx = {
     height: 70,
     lineHeight: "70px",
@@ -29,12 +28,14 @@ export default function MenuHeader() {
     fontWeight: 500,
     fontSize: 24,
     color: "white",
+    display: 'flex',
+    justifyContent: 'center',
     backgroundColor: "#028BCA", //secondary
     "&:hover": {
       backgroundColor: "rgba(135, 204, 242, 0.5)", //tertiary
     },
     "&:not(:last-child)": {
-      borderBottom: "1px dashed rgba(255, 255, 255, 0.7)",
+      borderBottom: "1px dashed rgba(255, 255, 255, 0.7)",  //white dots
     },
   };
 
@@ -47,13 +48,13 @@ export default function MenuHeader() {
     backgroundColor: "transparent",
     "&:hover": {
     backgroundColor: "transparent",
-    color: "#495057",
+    color: "#495057", //secondary text
     },
   };
-  
+
   return (
     <AppBar position="static"  sx={{ 
-        backgroundColor: "#5AA7CE", 
+        backgroundColor: "#5AA7CE",  //primary
         height: "155px", 
         display: "flex", 
         justifyContent: "center", 
@@ -82,7 +83,6 @@ export default function MenuHeader() {
         </Box>
 
         {/* Opcoes */}
-        
         <Box sx={{
             display: "flex", 
             gap: 6, 
@@ -98,6 +98,34 @@ export default function MenuHeader() {
               anchorEl={anchorElCarreira}
               open={Boolean(anchorElCarreira)}
               onClose={handleCloseCarreira}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              slotProps={{
+                paper: {
+                  sx: {
+                    border: 'none',
+                    boxShadow: '3',
+                    mt: 6,
+                    ml: 1,
+                    borderBottomLeftRadius: 16,
+                    borderBottomRightRadius: 16,
+                    borderTopLeftRadius: 0,
+                    borderTopRightRadius: 0,
+                  },
+                },
+                list: {
+                  sx: {
+                    paddingTop: 0,
+                    paddingBottom: 0,
+                  },
+                },
+              }}
               
             >
               {[

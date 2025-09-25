@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google"
 import MenuHeader from "../components/Header";
+import CustomFooter from "../components/Footer";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <MenuHeader />
         {children}
+        <CustomFooter />
       </body>
     </html>
   );

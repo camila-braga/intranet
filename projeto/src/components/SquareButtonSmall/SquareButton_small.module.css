@@ -42,6 +42,16 @@ font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
+.noIcon {
+  gap: 0;
+}
+
+.noIcon .label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*Outras resoluções*/
 
 @media (min-width: 1440px) {

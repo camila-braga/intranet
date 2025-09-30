@@ -1,9 +1,10 @@
-export default function Home() {
+import React from 'react';
+import './globals.css';
+
+import BentoGrid from '@/components/BentoGrid/BentoGrid';
+
+export default function HomePage() {
   return (
-    <div >
-      <main>
-        <h1>Teste</h1>
-      </main>
-    </div>
+    <BentoGrid />
   );
 }

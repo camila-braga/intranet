@@ -74,7 +74,7 @@ export default function MenuHeader() {
         {/* Logo */}
         <Box>
           <Image
-            src="/logo.png"
+            src="/icon/header/logo.png"
             alt="Logo"
             width={366}
             height={122}

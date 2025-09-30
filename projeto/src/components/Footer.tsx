@@ -53,9 +53,11 @@ export default function CustomFooter() {
                         href={link.href}
                         sx={linkSx}
                         underline="none"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
-                        >
+                    >
                         <Image
                             src={hoveredIndex === index ? link.iconWhite : link.iconDark}
                             alt={link.label}

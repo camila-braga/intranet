@@ -135,9 +135,12 @@ export default function MenuHeader() {
                 { label: "Novo PCCR/SESAP", href: "https://padlet.com/hospitalregionalrh/cartilha-servidor-hetff-q990zg8ick4zelqv/wish/2454003973" },
                 { label: "Regime Jurídico Único", href: "https://leisestaduais.com.br/rn/lei-complementar-n-122-1994-rio-grande-do-norte-dispoe-sobre-o-regime-juridico-unico-dos-servidores-publicos-civis-do-estado-e-das-autarquias-e-fundacoes-publicas-estaduais-institui-o-respectivo-estatuto-e-da-outras-providencias?origin=instituicao" },
               ].map(({ label, href }) => (
-                <MenuItem key={href}
-                  component={Link}
+                <MenuItem
+                  key={href}
+                  component="a"
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={handleCloseCarreira}
                   sx={menuItemSx}
                 >

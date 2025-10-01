@@ -61,8 +61,8 @@ export default function CustomFooter() {
                         <Image
                             src={hoveredIndex === index ? link.iconWhite : link.iconDark}
                             alt={link.label}
-                            width={20}
-                            height={17}
+                            width={22}
+                            height={22}
                             style={{
                                 transition: "all 0.3s ease",
                             }}

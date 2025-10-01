@@ -20,8 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body style={{ margin: 0, height: '100vh', display: 'flex', flexDirection: 'column', fontFamily: 'Montserrat, sans-serif' }}>
         <MenuHeader />
         
-        {/* Conteúdo principal cresce e ocupa espaço entre header e footer */}
-        <main style={{ flexGrow: 1, overflow: 'auto' }}>
+        <main style={{ flexGrow: 1, minHeight: 0, maxHeight: '100%', overflow: 'hidden' }}>
           {children}
         </main>
         

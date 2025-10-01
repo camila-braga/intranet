@@ -4,12 +4,11 @@
   grid-template-rows: repeat(4, minmax(0, 1fr));
   gap: 16px;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 155px - 155px);
   box-sizing: border-box;
-  padding: 24px 64px;
+  padding: 16px 64px;
 }
 
-/* POSICIONAMENTO EXATO DOS BOTÕES */
 .ponto {
   grid-column: 1 / span 4;
   grid-row: 1 / span 1;

@@ -27,8 +27,8 @@
 
 .icon {
   position: relative;
-  width: 72px;       
-  height: 72px;
+  width: 64px;       
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,8 +54,8 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .icon {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
   }
 }
 
@@ -69,8 +69,8 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .icon {
-    width: 72px;
-    height: 72px;
+    width: 64px;
+    height: 64px;
   }
 }
 
@@ -80,8 +80,8 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .icon {
-    width: 96px;
-    height: 96px;
+    width: 72px;
+    height: 72px;
   }
 
   .button {

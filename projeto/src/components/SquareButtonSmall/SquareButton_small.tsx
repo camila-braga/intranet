@@ -3,28 +3,37 @@ import Image from 'next/image';
 import styles from './SquareButton_small.module.css';
 
 type SquareButtonSmallProps = {
-  iconSrc?: string; // agora opcional
-  label: string;
+  iconSrc?: string;
+  label?: string; 
 };
 
 export default function SquareButtonSmall({ iconSrc, label }: SquareButtonSmallProps) {
-  const hasIcon = !!iconSrc;
+  const hasIcon = Boolean(iconSrc);
+  const hasLabel = Boolean(label);
 
   return (
-    <button className={`${styles.button} ${!hasIcon ? styles.noIcon : ''}`}>
+    <button
+      className={`
+        ${styles.button}
+        ${!hasIcon ? styles.noIcon : ''}
+        ${!hasLabel ? styles.noLabel : ''}
+      `}
+    >
       {hasIcon && (
         <div className={styles.icon}>
           <Image
-            src={iconSrc}
-            alt={label}
+            src={iconSrc as string}
+            alt={label || 'Ícone'}
             fill
             style={{ objectFit: 'contain' }}
             priority
           />
         </div>
       )}
-      <div className={styles.label}>{label}</div>
+
+      {hasLabel && (
+        <div className={styles.label}>{label}</div>
+      )}
     </button>
   );
 }
-

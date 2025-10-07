@@ -1,14 +1,17 @@
 .button {
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   border-radius: 16px;
-  padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.17);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: transform 0.2s ease;
-  
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {
@@ -21,22 +24,21 @@
     #ffffff;
 }
 
-/*Outras resoluções*/
-
-@media (min-width: 1440px) {
-  .button {
-    padding: 2rem;
-  }
+.iframeWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-@media (min-width: 1920px) {
-  .button {
-    padding: 2rem;
-  }
-}
-
-@media (min-width: 2560px) {
-  .button {
-    padding: 2.5rem;
-  }
+.iframe {
+  position: absolute;
+  top: -94px;    
+  left: -102px;
+  width: 1600px;
+  height: 1200px;
+  border: none;
+  transform: scale(0.68);
+  transform-origin: top left;
+  pointer-events: none;
 }

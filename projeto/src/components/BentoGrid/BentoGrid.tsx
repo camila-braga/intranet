@@ -51,7 +51,10 @@ export default function BentoGrid() {
       </div>
 
       <div className={styles.painel}>
-        <RectangleButtonExtraBig  />
+        <RectangleButtonExtraBig
+          iframeSrc="http://10.19.12.252/novosga-dashboard/index_atendimentos.html"
+          linkUrl="http://10.19.12.252/novosga-dashboard/index_atendimentos_tema.html"
+        />
       </div>
 
       <div className={styles.glpi}>

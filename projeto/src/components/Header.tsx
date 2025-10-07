@@ -31,8 +31,9 @@ export default function MenuHeader() {
     justifyContent: 'center',
     backgroundColor: "#028BCA", //secondary
     "&:hover": {
-      backgroundColor: "rgba(135, 204, 242, 0.5)", //tertiary
-    },
+    background: "linear-gradient(rgba(135, 204, 242, 0.5), rgba(135, 204, 242, 0.5)), #ffffff",
+    color: "#028BCA",
+  },
     "&:not(:last-child)": {
       borderBottom: "1px dashed rgba(255, 255, 255, 0.7)",  //white dots
     },

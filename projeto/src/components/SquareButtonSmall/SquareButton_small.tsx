@@ -12,21 +12,24 @@ type MenuItem = {
 type SquareButtonSmallProps = {
   iconSrc?: string;
   label?: string;
+  link?: string;
   menuItems?: MenuItem[];
 };
 
-export default function SquareButtonSmall({ iconSrc, label, menuItems }: SquareButtonSmallProps) {
+export default function SquareButtonSmall({ iconSrc, label, link, menuItems }: SquareButtonSmallProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const buttonRef = useRef<HTMLDivElement>(null);
 
   const hasIcon = Boolean(iconSrc);
   const hasLabel = Boolean(label);
 
-  const toggleMenu = () => {
-    if (menuItems) {
-      setMenuOpen(prev => !prev);
-    }
-  };
+  const handleClick = () => {
+  if (menuItems) {
+    setMenuOpen(prev => !prev);
+  } else if (link) {
+    window.open(link, '_blank');
+  }
+};
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -48,7 +51,7 @@ export default function SquareButtonSmall({ iconSrc, label, menuItems }: SquareB
           ${!hasIcon ? styles.noIcon : ''}
           ${!hasLabel ? styles.noLabel : ''}
         `}
-        onClick={toggleMenu}
+        onClick={handleClick}
       >
         {hasIcon && (
           <div className={styles.icon}>

@@ -58,7 +58,10 @@ export default function BentoGrid() {
 
       {/* SIGTAP */}
       <div className={styles.sigtap}>
-        <SquareButtonSmall label="SIGTAP" />
+        <SquareButtonSmall 
+          label="SIGTAP"
+          link="http://sigtap.datasus.gov.br/tabela-unificada/app/sec/inicio.jsp"
+        />
       </div>
 
       {/* HORUS */}
@@ -161,7 +164,10 @@ export default function BentoGrid() {
       
       {/* Transporte */}
       <div className={styles.transporte}>
-        <SquareButtonSmall iconSrc="/icon/bentoGrid/transporte.png" />
+        <SquareButtonSmall 
+          iconSrc="/icon/bentoGrid/transporte.png"
+          link="https://sgt.saude.rn.gov.br/index.php?redirect=%2Fplugins%2Fformcreator%2Ffront%2Fformdisplay.php%3Fid%3D13&error=3"
+        />
       </div>
 
       {/* SIPAC */}
@@ -193,17 +199,26 @@ export default function BentoGrid() {
 
       {/* Intranet */}
       <div className={styles.intranet}>
-        <SquareButtonSmall label="Intranet RN" />
+        <SquareButtonSmall 
+          label="Intranet RN"
+          link="http://intranet.govrn/"
+        />
       </div>
 
       {/* REPEPS */}
       <div className={styles.repeps}>
-        <SquareButtonSmall label="REPEPS" />
+        <SquareButtonSmall 
+          label="REPEPS"
+          link="https://sueds.imd.ufrn.br/"
+        />
       </div>
 
       {/* TV */}
       <div className={styles.tv}>
-        <SquareButtonSmall iconSrc="/icon/bentoGrid/tv.png" />
+        <SquareButtonSmall 
+          iconSrc="/icon/bentoGrid/tv.png"
+          link="http://10.19.12.252/painel-web-master/"
+        />
       </div>
     </div>
   );

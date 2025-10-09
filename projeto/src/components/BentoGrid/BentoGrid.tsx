@@ -63,7 +63,11 @@ export default function BentoGrid() {
 
       {/* HORUS */}
       <div className={styles.horus}>
-        <SquareButtonBig iconSrc="/icon/bentoGrid/horus.png" label="HÓRUS" />
+        <SquareButtonBig 
+          iconSrc="/icon/bentoGrid/horus.png" 
+          label="HÓRUS" 
+          link="https://scaweb.saude.gov.br/scaweb/"
+        />
       </div>
       
       {/* SEI */}
@@ -175,7 +179,11 @@ export default function BentoGrid() {
 
       {/* GLPI */}
       <div className={styles.glpi}>
-        <SquareButtonBig iconSrc="/icon/bentoGrid/glpi.png" label="GLPI" />
+        <SquareButtonBig 
+          iconSrc="/icon/bentoGrid/glpi.png" 
+          label="GLPI"
+          link="http://10.19.12.251/glpi/"
+        />
       </div>
 
       {/* SGH */}

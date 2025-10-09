@@ -10,16 +10,13 @@ type MenuItem = {
 type SquareButtonBigProps = {
   iconSrc: string;
   label: string;
+  link?: string;
   menuItems?: MenuItem[];
 };
 
-export default function SquareButtonBig({ iconSrc, label, menuItems }: SquareButtonBigProps) {
+export default function SquareButtonBig({ iconSrc, label, link, menuItems }: SquareButtonBigProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const buttonRef = useRef<HTMLDivElement>(null);
-
-  const toggleMenu = () => {
-    if (menuItems) setMenuOpen(prev => !prev);
-  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -31,9 +28,17 @@ export default function SquareButtonBig({ iconSrc, label, menuItems }: SquareBut
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleClick = () => {
+    if (menuItems) {
+      setMenuOpen(prev => !prev);
+    } else if (link) {
+      window.open(link, "_blank");
+    }
+  };
+
   return (
     <div className={styles.wrapper} ref={buttonRef}>
-      <button className={styles.button} onClick={toggleMenu}>
+      <button className={styles.button} onClick={handleClick}>
         <div className={styles.icon}>
           <Image
             src={iconSrc}

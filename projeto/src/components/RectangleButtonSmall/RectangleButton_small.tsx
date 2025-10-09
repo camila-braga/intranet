@@ -10,16 +10,21 @@ type MenuItem = {
 type RectangleButtonSmallProps = {
   iconSrc: string;
   label: string;
+  link?: string;
   menuItems?: MenuItem[];
 };
 
-export default function RectangleButtonSmall({ iconSrc, label, menuItems }: RectangleButtonSmallProps) {
+export default function RectangleButtonSmall({ iconSrc, label, link, menuItems }: RectangleButtonSmallProps) {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const buttonRef = useRef<HTMLDivElement>(null);
 
-  const toggleMenu = () => {
-    if (menuItems) setMenuOpen(prev => !prev);
+  const handleClick = () => {
+    if (menuItems) {
+      setMenuOpen(prev => !prev);
+    } else if (link) {
+      window.open(link, '_blank');
+    }
   };
 
   useEffect(() => {
@@ -34,7 +39,7 @@ export default function RectangleButtonSmall({ iconSrc, label, menuItems }: Rect
   
   return (
     <div className={styles.wrapper} ref={buttonRef}>
-      <button className={styles.button} onClick={toggleMenu}>
+      <button className={styles.button} onClick={handleClick}>
         <div className={styles.icon}>
           <Image
             src={iconSrc}

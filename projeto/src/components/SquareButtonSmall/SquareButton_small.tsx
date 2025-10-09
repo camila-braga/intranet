@@ -24,12 +24,12 @@ export default function SquareButtonSmall({ iconSrc, label, link, menuItems }: S
   const hasLabel = Boolean(label);
 
   const handleClick = () => {
-  if (menuItems) {
-    setMenuOpen(prev => !prev);
-  } else if (link) {
-    window.open(link, '_blank');
-  }
-};
+    if (menuItems) {
+      setMenuOpen(prev => !prev);
+    } else if (link) {
+      window.open(link, '_blank');
+    }
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

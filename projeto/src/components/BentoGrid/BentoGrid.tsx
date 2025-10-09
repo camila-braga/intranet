@@ -159,7 +159,11 @@ export default function BentoGrid() {
 
       {/* SGA */}
       <div className={styles.sga}>
-        <RectangleButtonMedium iconSrc="/icon/bentoGrid/sga.png" label="SGA" />
+        <RectangleButtonMedium 
+          iconSrc="/icon/bentoGrid/sga.png" 
+          label="SGA"
+          link="http://10.19.12.252/novosga/public/login"
+        />
       </div>
       
       {/* Transporte */}
@@ -172,7 +176,11 @@ export default function BentoGrid() {
 
       {/* SIPAC */}
       <div className={styles.sipac}>
-        <RectangleButtonSmall iconSrc="/icon/bentoGrid/sipac.png" label="SIPAC" />
+        <RectangleButtonSmall 
+          iconSrc="/icon/bentoGrid/sipac.png" 
+          label="SIPAC"
+          link="https://sipac.rn.gov.br/sipac/"
+        />
       </div>
 
       {/* Painel */}
@@ -194,7 +202,11 @@ export default function BentoGrid() {
 
       {/* SGH */}
       <div className={styles.sgh}>
-        <RectangleButtonMedium iconSrc="/icon/bentoGrid/sgh.png" label="SGH" />
+        <RectangleButtonMedium 
+          iconSrc="/icon/bentoGrid/sgh.png" 
+          label="SGH"
+          link="https://farmacia.sgh.saude.rn.gov.br/"
+        />
       </div>
 
       {/* Intranet */}

@@ -52,7 +52,30 @@ export default function BentoGrid() {
       
       {/* SEI */}
       <div className={styles.sei}>
-        <SquareButtonBig iconSrc="/icon/bentoGrid/sei.png" label="SEI RN" />
+        <SquareButtonBig 
+          iconSrc="/icon/bentoGrid/sei.png" 
+          label="SEI RN"
+          menuItems={[
+            {
+              label: "Acessar",
+              onClick: () => {
+                window.open("https://sei.rn.gov.br/sip/login.php?sigla_orgao_sistema=SEAD&sigla_sistema=SEI", "_blank");
+              },
+            },
+            {
+              label: "Usuário externo",
+              onClick: () => {
+                window.open("https://sei.rn.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&acao_origem=usuario_externo_gerar_senha&id_orgao_acesso_externo=0", "_blank");
+              },
+            },
+            {
+              label: "Nova senha",
+              onClick: () => {
+                window.open("http://sistemas.intranet.govrn/AlterarSenhaAD", "_blank");
+              },
+            },
+          ]}
+        />
       </div>
 
       {/* Correio */}
@@ -62,7 +85,36 @@ export default function BentoGrid() {
 
       {/* CEAF */}
       <div className={styles.ceaf}>
-        <SquareButtonBig iconSrc="/icon/bentoGrid/ceaf.png" label="CEAF" />
+        <SquareButtonBig 
+          iconSrc="/icon/bentoGrid/ceaf.png" 
+          label="CEAF" 
+          menuItems={[
+            {
+              label: "Cadastro",
+              onClick: () => {
+                window.open("https://www.appsheet.com/Account/Login?appName=Cadastro%20e%20Acompanhamento&FullScope=False&provider=google&returnUrl=https%3A%2F%2Fwww.appsheet.com%2Fstart%2F91eaa9a8-4ac4-4c10-a027-f19c8d724011", "_blank");
+              },
+            },
+            {
+              label: "R. A. Atendimento",
+              onClick: () => {
+                window.open("https://www.appsheet.com/Account/Login?appName=Renova%C3%A7%C3%A3o%20Antecipada%20ATT&FullScope=False&provider=google&returnUrl=https%3A%2F%2Fwww.appsheet.com%2Fstart%2Fbdca8050-5f03-4abb-8f20-681c46c9431d", "_blank");
+              },
+            },
+            {
+              label: "R. A. Farmacêutico",
+              onClick: () => {
+                window.open("https://www.appsheet.com/Account/Login?appName=Renova%C3%A7%C3%A3o%20Antecipada%20Farma&FullScope=False&provider=google&returnUrl=https%3A%2F%2Fwww.appsheet.com%2Fstart%2F4ede67a0-b6b7-4035-93e8-0c3da521513b", "_blank");
+              },
+            },
+            {
+              label: "Calculadora de medicamentos",
+              onClick: () => {
+                window.open("http://10.19.12.251/multcalculadora/", "_blank");
+              },
+            },
+          ]}
+        />
       </div>
 
       {/* SGA */}

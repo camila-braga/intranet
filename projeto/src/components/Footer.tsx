@@ -30,9 +30,9 @@ const linkSx = {
 };
 
 const links = [
-    { href: "/emailramais", label: "E-mails e ramais", iconDark: "/icon/footer/ramal_dark.png", iconWhite: "/icon/footer/ramal_light.png" },
-    { href: "/regionais", label: "Regionais", iconDark: "/icon/footer/regional_dark.png", iconWhite: "/icon/footer/regional_light.png" },
-    { href: "/calendario", label: "Calendário", iconDark: "/icon/footer/calendario_dark.png", iconWhite: "/icon/footer/calendario_light.png" },
+    { href: "http://intranet.unicat/magnetic/ramais.html", label: "E-mails e ramais", iconDark: "/icon/footer/ramal_dark.png", iconWhite: "/icon/footer/ramal_light.png" },
+    { href: "http://10.19.12.251/regionais/", label: "Regionais", iconDark: "/icon/footer/regional_dark.png", iconWhite: "/icon/footer/regional_light.png" },
+    { href: "http://10.19.12.251/calendario-niver/", label: "Calendário", iconDark: "/icon/footer/calendario_dark.png", iconWhite: "/icon/footer/calendario_light.png" },
     { href: "https://www.sead.rn.gov.br/postagem/assedio-nao/", label: "Assédio não!", iconDark: "/icon/footer/assedio_dark.png", iconWhite: "/icon/footer/assedio_light.png" },
 ];
 

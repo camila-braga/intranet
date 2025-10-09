@@ -59,7 +59,7 @@ export default function MenuHeader() {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center", 
-        paddingX: "32px"
+        paddingX: "32px",
       }}> 
 
       <Toolbar sx={{

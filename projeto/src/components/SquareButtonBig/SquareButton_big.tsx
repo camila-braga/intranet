@@ -15,21 +15,21 @@ type SquareButtonBigProps = {
 
 export default function SquareButtonBig({ iconSrc, label, menuItems }: SquareButtonBigProps) {
   const [menuOpen, setMenuOpen] = useState(false);
-    const buttonRef = useRef<HTMLDivElement>(null);
-  
-    const toggleMenu = () => {
-      if (menuItems) setMenuOpen(prev => !prev);
+  const buttonRef = useRef<HTMLDivElement>(null);
+
+  const toggleMenu = () => {
+    if (menuItems) setMenuOpen(prev => !prev);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (buttonRef.current && !buttonRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
     };
-  
-    useEffect(() => {
-      const handleClickOutside = (event: MouseEvent) => {
-        if (buttonRef.current && !buttonRef.current.contains(event.target as Node)) {
-          setMenuOpen(false);
-        }
-      };
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, []);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <div className={styles.wrapper} ref={buttonRef}>

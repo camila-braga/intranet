@@ -37,7 +37,23 @@ export default function BentoGrid() {
 
       {/* RH */}
       <div className={styles.rh}>
-        <SquareButtonSmall label="Meu RH" />
+        <SquareButtonSmall 
+          label="Meu RH"
+          menuItems={[
+            {
+              label: "Acessar",
+              onClick: () => {
+                window.open("http://www.portalrh.saude.rn.gov.br/MEUPORTALRH/Formularios/Principal", "_blank");
+              },
+            },
+            {
+              label: "Calculadora do plantão eventual",
+              onClick: () => {
+                window.open("http://10.19.12.251/calculadora/", "_blank");
+              },
+            },
+          ]}
+        />
       </div>
 
       {/* SIGTAP */}
@@ -80,7 +96,24 @@ export default function BentoGrid() {
 
       {/* Correio */}
       <div className={styles.correio}>
-        <RectangleButtonSmall iconSrc="/icon/bentoGrid/correio.png" label="Correio" />
+        <RectangleButtonSmall 
+          iconSrc="/icon/bentoGrid/correio.png" 
+          label="Correio" 
+          menuItems={[
+            {
+              label: "Acessar",
+              onClick: () => {
+                window.open("https://correio.rn.gov.br/", "_blank");
+              },
+            },
+            {
+              label: "Manual",
+              onClick: () => {
+                window.open("https://perfect-tamarind-033.notion.site/Zimbra-E-mail-f4eb426846d7409d9fd7dc47753a844e", "_blank");
+              },
+            },
+          ]}
+        />
       </div>
 
       {/* CEAF */}

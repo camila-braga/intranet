@@ -33,12 +33,12 @@
 
 .iframe {
   position: absolute;
-  top: -105px;    
-  left: -102px;
+  top: -104px;    
+  left: -110px;
   width: 1600px;
   height: 1200px;
   border: none;
-  transform: scale(0.68);
+  transform: scale(0.76);
   transform-origin: top left;
   pointer-events: none;
 }

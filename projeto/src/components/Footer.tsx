@@ -12,6 +12,7 @@ const footerSx = {
     paddingX: "32px",
     width: "100%",
     height: "155px",
+    marginTop: "12px"
 };
 
 const linkSx = {

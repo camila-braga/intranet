@@ -104,7 +104,7 @@ export default function CustomFooter() {
             h-[136px] px-16                  // Base, padding 64px
             hd:h-[152px] hd:px-16           // HD, padding 64px
             qhd:h-[200px] qhd:px-20         // QHD, padding 80px
-            4k:h-[304px] 4k:px-30           // 4K, padding 120px
+            4k:h-[304px] 4k:px-32           // 4K, padding 128px
           "
         >
             {/* Texto do Copyright */}

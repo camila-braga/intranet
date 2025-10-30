@@ -1,18 +1,16 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #E9ECEF;
   --foreground: #495057;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Montserrat', sans-serif;
-}
-
 @layer base {
   body {
+    background: var(--background);
+    color: var(--foreground);
     font-family: 'Montserrat', sans-serif;
   }
 }

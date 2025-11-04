@@ -16,9 +16,14 @@ module.exports = {
 
     extend: {
       colors: {
-        'dark-text': '#333333',
-        'footer-background': '#5AA7CE',
-        'foreground': 'var(--foreground)',
+        'background': '#E9ECEF',  
+        'white': '#FFFFFF',      
+
+        'text-main': '#333333',  
+        'text-muted': '#495057', 
+        
+        'primary': '#5AA7CE',     
+        'secondary': '#028BCA',   
       },
     },
   },

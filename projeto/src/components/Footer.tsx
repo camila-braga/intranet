@@ -98,7 +98,7 @@ export default function CustomFooter() {
         <footer 
           className="
             flex items-center justify-between w-full 
-            bg-footer-background text-white
+            bg-primary text-white
             mt-0
             
             h-[136px] px-16                  // Base, padding 64px
@@ -110,7 +110,7 @@ export default function CustomFooter() {
             {/* Texto do Copyright */}
             <p 
               className="
-                font-medium text-dark-text 
+                font-medium text-text-main
                 
                 text-lg px-0                 // Base: 18px 
                 hd:text-2xl hd:px-0         // HD: 24px 
@@ -139,7 +139,7 @@ export default function CustomFooter() {
                         className="
                           group flex items-center no-underline 
                           text-white font-medium 
-                          hover:text-foreground transition-colors duration-100
+                          hover:text-text-muted transition-colors duration-100
                           
                           text-lg gap-3              // Base: 18px font, 12px gap 
                           hd:text-2xl hd:gap-3         // HD: 24px font, 12px gap 

@@ -295,7 +295,7 @@ export default function MenuHeader() {
     setAnchorElDashboard(null);
   };
 
-  const buttonBaseSx = {  // menu
+  const buttonBaseSx = {
     fontFamily: "'Montserrat', sans-serif",
     fontWeight: 500,
     textTransform: "none",
@@ -318,7 +318,7 @@ export default function MenuHeader() {
     },
   };
 
-  const menuItemSx = {  // submenu
+  const menuItemSx = {
     fontFamily: "'Montserrat', sans-serif",
     fontWeight: 500,
     color: "white",
@@ -355,21 +355,22 @@ export default function MenuHeader() {
     },
   };
 
+  /* If the header's height changes, the 'mt' property must be updated as well to keep the submenu anchored to the header's bottom. */
   const paperSx = {
     border: 'none',
     boxShadow: '3',
-    mt: '1',                                 // Base
+    mt: 6.5,                                 // Base
     borderRadius: '0 0 1rem 1rem',           // Base, 16px
     '@media (min-width: 1920px)': {          // HD
-      mt: '1.5',                       
+      mt: 6.9,                       
       borderRadius: '0 0 1.25rem 1.25rem'    // 20px
     },
     '@media (min-width: 2560px)': {          // QHD
-      mt: '2',                       
+      mt: 8.5,                       
       borderRadius: '0 0 1.875rem 1.875rem'  // 30px
     },
     '@media (min-width: 3840px)': {          // 4K
-      mt: '2.5',                       
+      mt: 11.5,                       
       borderRadius: '0 0 3rem 3rem'          // 48px
     },
   }

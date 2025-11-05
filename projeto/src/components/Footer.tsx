@@ -107,7 +107,7 @@ export default function CustomFooter() {
             4k:h-[19rem] 4k:px-32             // 4K, height: 304px, padding: 128px
           "
         >
-            {/* Texto do Copyright */}
+            {/* Copyright text */}
             <p 
               className="
                 font-medium text-text-main
@@ -121,7 +121,7 @@ export default function CustomFooter() {
                 Tecnologia da Informação | Copyright © 2025
             </p>
 
-            {/* Container dos Links */}
+            {/* Links */}
             <div 
               className="
                 flex 

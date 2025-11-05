@@ -101,10 +101,10 @@ export default function CustomFooter() {
             bg-primary text-white
             mt-0
             
-            h-[136px] px-16                  // Base, padding 64px
-            hd:h-[152px] hd:px-16           // HD, padding 64px
-            qhd:h-[200px] qhd:px-20         // QHD, padding 80px
-            4k:h-[304px] 4k:px-32           // 4K, padding 128px
+            h-[8.5rem] px-16                  // Base, height: 136px, padding: 64px
+            hd:h-[9.5rem] hd:px-16            // HD, height: 152px, padding: 64px
+            qhd:h-[12.5rem] qhd:px-20         // QHD, height: 200px, padding: 80px
+            4k:h-[19rem] 4k:px-32             // 4K, height: 304px, padding: 128px
           "
         >
             {/* Texto do Copyright */}
@@ -112,10 +112,10 @@ export default function CustomFooter() {
               className="
                 font-medium text-text-main
                 
-                text-lg px-0                 // Base: 18px 
-                hd:text-2xl hd:px-0         // HD: 24px 
-                qhd:text-3xl qhd:px-0      // QHD: 30px 
-                4k:text-5xl 4k:px-0        // 4K: 48px 
+                text-lg px-0                 // Base, 18px 
+                hd:text-2xl hd:px-0          // HD, 24px 
+                qhd:text-3xl qhd:px-0        // QHD, 30px 
+                4k:text-5xl 4k:px-0          // 4K, 48px 
               "
             >
                 Tecnologia da Informação | Copyright © 2025
@@ -126,10 +126,10 @@ export default function CustomFooter() {
               className="
                 flex 
                 
-                gap-[24px] px-0              // Base 
-                hd:gap-[72px] hd:px-0       // HD 
-                qhd:gap-[104px] qhd:px-0    // QHD 
-                4k:gap-[144px] 4k:px-0      // 4K 
+                gap-6 px-0                    // Base, 24px
+                hd:gap-[4.5rem] hd:px-0       // HD, 72px 
+                qhd:gap-[6.5rem] qhd:px-0     // QHD, 104px
+                4k:gap-36 4k:px-0             // 4K, 144px
               "
             >
                 {links.map((link, index) => (
@@ -141,10 +141,10 @@ export default function CustomFooter() {
                           text-white font-medium 
                           hover:text-text-muted transition-colors duration-100
                           
-                          text-lg gap-3              // Base: 18px font, 12px gap 
-                          hd:text-2xl hd:gap-3         // HD: 24px font, 12px gap 
-                          qhd:text-3xl qhd:gap-5     // QHD: 30px font, 20px gap 
-                          4k:text-5xl 4k:gap-7         // 4K: 48px font, 28px gap 
+                          text-lg gap-3               // Base, font: 18px, gap: 12px 
+                          hd:text-2xl hd:gap-3        // HD, font: 24px, gap: 12px 
+                          qhd:text-3xl qhd:gap-5      // QHD, font: 30px, gap: 20px
+                          4k:text-5xl 4k:gap-7        // 4K, font: 48px, gap: 28px
                         "
                         target="_blank"
                         rel="noopener noreferrer"
@@ -159,10 +159,10 @@ export default function CustomFooter() {
                             className="
                               transition-all duration-100
                               
-                              w-6 h-5               // Base: 24x20px 
-                              hd:w-6 hd:h-5         // HD: 24x20px
-                              qhd:w-8 qhd:h-[28px]       // QHD: 32x28px 
-                              4k:w-14 4k:h-12       // 4K: 56x48px 
+                              w-6 h-5                  // Base: 24x20px 
+                              hd:w-6 hd:h-5            // HD: 24x20px
+                              qhd:w-8 qhd:h-7          // QHD: 32x28px 
+                              4k:w-14 4k:h-12          // 4K: 56x48px 
                             "
                         />
                         <span>{link.label}</span>

@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body style={{ margin: 0, height: '100vh', display: 'flex', flexDirection: 'column', fontFamily: 'Montserrat, sans-serif' }}>
+      <body className={`${montserrat.className} flex flex-col min-h-screen`}>
         <MenuHeader />
         
-        <main style={{ flexGrow: 1, minHeight: 0, maxHeight: '100%', overflow: 'hidden' }}>
+        <main className="flex-grow flex">
           {children}
         </main>
         

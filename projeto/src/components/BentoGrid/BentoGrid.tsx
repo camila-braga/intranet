@@ -22,7 +22,7 @@ export default function BentoGrid() {
     >
 
       {/* Ponto */}
-      <div className="col-span-4"> {/* row-span-1 é o padrão */}
+      <div className="col-span-4">
         <RectangleButtonBig 
           iconSrc="/icon/bentoGrid/ponto.png" 
           label="Controle de Ponto"
@@ -58,6 +58,12 @@ export default function BentoGrid() {
               label: "Calculadora do plantão eventual",
               onClick: () => {
                 window.open("http://10.19.12.251/calculadora/", "_blank");
+              },
+            },
+             {
+              label: "Organograma",
+              onClick: () => {
+                window.open("http://10.19.12.251/calculadora/", "_blank");  //alterar link
               },
             },
           ]}

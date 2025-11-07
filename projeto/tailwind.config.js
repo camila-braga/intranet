@@ -24,6 +24,9 @@ module.exports = {
         
         'primary': '#5AA7CE',     
         'secondary': '#028BCA',   
+
+        'secondary-hover': '#C3E6F9', 
+        'accent-light': '#E7F5FC',
       },
     },
   },

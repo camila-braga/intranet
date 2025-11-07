@@ -67,10 +67,10 @@ export default function MenuHeader() {
     color: "white",
     display: 'flex',
     justifyContent: 'center',
-     padding: '0 1rem 0 1rem',
+    padding: '0 1rem 0 1rem',
     backgroundColor: "#028BCA",
     "&:hover": {
-      background: "linear-gradient(rgba(135, 204, 242, 0.5), rgba(135, 204, 242, 0.5)), #ffffff",
+      background: "#C3E6F9",
       color: "#028BCA",
     },
     "&:not(:last-child)": {

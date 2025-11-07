@@ -64,7 +64,7 @@ export default function SquareButtonBig({ iconSrc, label, link, menuItems }: Squ
           rounded-2xl                      // Base, rounded: 16px
           hd:rounded-2xl                   // HD, rounded: 16px
           qhd:rounded-[1.25rem]            // QHD, rounded: 20px
-          4k:rounded-[1.5rem]              // 4k, rounded: 24px
+          4k:rounded-3xl                   // 4k, rounded: 24px
         " 
         onClick={handleClick}
       >
@@ -133,17 +133,17 @@ export default function SquareButtonBig({ iconSrc, label, link, menuItems }: Squ
                 hover:bg-secondary-hover
                 
                 h-[3.75rem]                   // Base, altura: 60px
-                hd:h-[4.5rem]                 // HD, altura: 72px
-                qhd:h-[6rem]                  // QHD, altura: 96px
+                hd:h-[3.75rem]                // HD, altura: 60px
+                qhd:h-[5rem]                  // QHD, altura: 80px
                 4k:h-[10rem]                  // 4K, altura: 160px
 
                 leading-[3.75rem]             // Base, leading: 60px
-                hd:leading-[4.5rem]           // HD, leading: 72px
-                qhd:leading-[6rem]            // QHD, leading: 96px
+                hd:leading-[3.75rem]          // HD, leading: 60px
+                qhd:leading-[5rem]            // QHD, leading: 80px
                 4k:leading-[10rem]            // 4K,, leading: 160px
 
                 text-base                     // Base, text: 16px
-                hd:text-[1.375rem]            // HD, text: 22px
+                hd:text-[1.25rem]             // HD, text: 20px
                 qhd:text-[1.75rem]            // QHD, text: 28px
                 4k:text-[2.875rem]            // 4K, text: 46px
 

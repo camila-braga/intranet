@@ -76,7 +76,7 @@ export default function SquareButtonSmall({ iconSrc, label, link, menuItems }: S
             w-12 h-12              // Base, 48x48px
             hd:w-16 hd:h-16        // HD - 64x64px
             qhd:w-20 qhd:h-20      // QHD - 80x80px
-            4k:w-32 4k:h-32        // 4K - 128x128px
+            4k:w-28 4k:h-28        // 4K - 112x112px
           ">
             <Image
               src={iconSrc as string}

@@ -9,7 +9,7 @@ import Image from "next/image";
 function MenuSpacer() {
   return (
     <span className="
-      text-white
+    text-white
       font-light
       text-xl       // Base (20px)
       hd:text-3xl   // HD (30px)
@@ -200,7 +200,8 @@ export default function MenuHeader() {
                 >
                   {label}
                 </MenuItem>
-            ))}
+              ))
+            }
           </Menu>
 
           <MenuSpacer />
@@ -241,7 +242,8 @@ export default function MenuHeader() {
                 >
                   {label}
                 </MenuItem>
-              ))}
+              ))
+            }
           </Menu>
 
           <MenuSpacer />

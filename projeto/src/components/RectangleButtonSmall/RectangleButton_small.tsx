@@ -73,10 +73,10 @@ export default function RectangleButtonSmall({ iconSrc, label, link, menuItems }
           className="
             relative flex items-center justify-center
             
-            w-11 h-11              // Base, 44x44px
-            hd:w-14 hd:h-14        // HD - 56x56px
-            qhd:w-[4.5rem] qhd:h-[4.5rem]      // QHD - 72x72px
-            4k:w-24  4k:h-24        // 4K - 96x96px
+            w-11 h-11                          // Base, 44x44px
+            hd:w-14 hd:h-14                    // HD, 56x56px
+            qhd:w-[4.5rem] qhd:h-[4.5rem]      // QHD, 72x72px
+            4k:w-24  4k:h-24                   // 4K, 96x96px
           "
         >
           <Image
@@ -91,10 +91,10 @@ export default function RectangleButtonSmall({ iconSrc, label, link, menuItems }
           className="
             font-medium text-text-muted text-center
             
-            text-xl                // Base (xl) - 20px
-            hd:text-2xl            // HD - 24px
-            qhd:text-3xl           // QHD - 30px
-            4k:text-5xl            // 4K - 48px
+            text-xl                // Base, 20px
+            hd:text-2xl            // HD, 24px
+            qhd:text-3xl           // QHD, 30px
+            4k:text-5xl            // 4K, 48px
           "
         >
           {label}

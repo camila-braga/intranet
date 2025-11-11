@@ -8,21 +8,16 @@ type MenuItem = {
   onClick: () => void;
 };
 
-type RectangleButtonBigProps = {
+type SquareButtonBigProps = {
   iconSrc: string;
   label: string;
+  link?: string;
   menuItems?: MenuItem[];
 };
 
-export default function RectangleButtonBig({ iconSrc, label, menuItems }: RectangleButtonBigProps) {
+export default function SquareButtonBig({ iconSrc, label, link, menuItems }: SquareButtonBigProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const buttonRef = useRef<HTMLDivElement>(null);
-
-  const handleClick = () => {
-    if (menuItems) {
-      setMenuOpen(prev => !prev);
-    }
-  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -34,18 +29,25 @@ export default function RectangleButtonBig({ iconSrc, label, menuItems }: Rectan
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleClick = () => {
+    if (menuItems) {
+      setMenuOpen(prev => !prev);
+    } else if (link) {
+      window.open(link, "_blank");
+    }
+  };
+
   return (
     <div className="relative w-full h-full" ref={buttonRef}>
       <button 
         className="
-          flex flex-row items-center justify-center
-          w-full h-full 
-          
+          flex flex-col items-center justify-center 
+          w-full h-full
           bg-white border border-black/15 
           cursor-pointer 
           shadow-[0_4px_12px_rgba(0,0,0,0.1)]
           transition-transform duration-200 ease-in-out
-          hover:scale-105
+          hover:scale-105 
           hover:bg-accent-light
           
           p-6                              // Base, padding: 24px
@@ -53,26 +55,26 @@ export default function RectangleButtonBig({ iconSrc, label, menuItems }: Rectan
           qhd:p-10                         // QHD, padding: 40px
           4k:p-14                          // 4K, padding: 56px
 
-          gap-[0.875rem]                   // Base, gap: 14px
-          hd:gap-4                         // HD, gap: 16px
-          qhd:gap-5                        // QHD, gap: 20px
+          gap-4                            // Base, gap: 16px
+          hd:gap-5                         // HD, gap: 20px
+          qhd:gap-6                        // QHD, gap: 24px
           4k:gap-8                         // 4k, gap: 32px
 
           rounded-2xl                      // Base, rounded: 16px
           hd:rounded-2xl                   // HD, rounded: 16px
           qhd:rounded-[1.25rem]            // QHD, rounded: 20px
           4k:rounded-3xl                   // 4k, rounded: 24px
-        "
+        " 
         onClick={handleClick}
       >
+        {/* Icon */}
         <div 
           className="
             relative flex items-center justify-center
-            
-            w-12 h-12                          // Base, 48x48px
-            hd:w-16 hd:h-16                    // HD, 64x64px
-            qhd:w-20 qhd:h-20                  // QHD, 80x80px
-            4k:w-32  4k:h-32                   // 4K, 128x128px
+            w-14 h-14              // Base, 56x56px
+            hd:w-20 hd:h-20        // HD, 80x80px
+            qhd:w-24 qhd:h-24      // QHD, 96x96px
+            4k:w-36 4k:h-36        // 4K, 144x144px
           "
         >
           <Image
@@ -83,11 +85,10 @@ export default function RectangleButtonBig({ iconSrc, label, menuItems }: Rectan
             priority
           />
         </div>
-        
+        {/* Label */}
         <div 
           className="
             font-medium text-text-muted text-center
-          
             text-xl                // Base, 20px
             hd:text-2xl            // HD, 24px
             qhd:text-3xl           // QHD, 30px
@@ -97,15 +98,14 @@ export default function RectangleButtonBig({ iconSrc, label, menuItems }: Rectan
           {label}
         </div>
       </button>
-
-      {/* .menu */ }
+      {/* Menu */}
       {menuOpen && menuItems && (
         <div 
           className="
-            absolute top-0 left-full z-50 ml-2
+            absolute top-0 left-full z-50 ml-2 
             w-max overflow-hidden
             shadow-lg
-
+            
             min-w-44                          // Base, width: 176px
             hd:min-w-56                       // HD, width: 224px
             qhd:min-w-64                      // QHD, width: 256px
@@ -115,8 +115,9 @@ export default function RectangleButtonBig({ iconSrc, label, menuItems }: Rectan
             hd:rounded-[1.25rem]              // HD, rounded: 20px
             qhd:rounded-[1.875rem]            // QHD, rounded: 30px
             4k:rounded-[3rem]                 // 4K, rounded: 48px
-          "
+          " 
         >
+          {/* Menu Itens */}
           {menuItems.map((item, index) => (
             <div
               key={index}
@@ -129,7 +130,7 @@ export default function RectangleButtonBig({ iconSrc, label, menuItems }: Rectan
                 last:border-b-0
                 hover:text-secondary 
                 hover:bg-secondary-hover
-
+                
                 h-[3.75rem]                   // Base, altura: 60px
                 hd:h-[3.75rem]                // HD, altura: 60px
                 qhd:h-[5rem]                  // QHD, altura: 80px
@@ -163,74 +164,3 @@ export default function RectangleButtonBig({ iconSrc, label, menuItems }: Rectan
     </div>
   );
 }
-
-
-// "use client";
-
-// import React, { useState, useRef, useEffect } from 'react';
-// import Image from 'next/image';
-// import styles from './RectangleButton_big.module.css';
-
-// type MenuItem = {
-//   label: string;
-//   onClick: () => void;
-// };
-
-// type RectangleButtonBigProps = {
-//   iconSrc: string;
-//   label: string;
-//   menuItems?: MenuItem[];
-// };
-
-// export default function RectangleButtonBig({ iconSrc, label, menuItems }: RectangleButtonBigProps) {
-//   const [menuOpen, setMenuOpen] = useState(false);
-//   const buttonRef = useRef<HTMLDivElement>(null);
-
-//   const toggleMenu = () => {
-//     if (menuItems) setMenuOpen(prev => !prev);
-//   };
-
-//   useEffect(() => {
-//     const handleClickOutside = (event: MouseEvent) => {
-//       if (buttonRef.current && !buttonRef.current.contains(event.target as Node)) {
-//         setMenuOpen(false);
-//       }
-//     };
-//     document.addEventListener("mousedown", handleClickOutside);
-//     return () => document.removeEventListener("mousedown", handleClickOutside);
-//   }, []);
-
-//   return (
-//     <div className={styles.wrapper} ref={buttonRef}>
-//       <button className={styles.button} onClick={toggleMenu}>
-//         <div className={styles.icon}>
-//           <Image
-//             src={iconSrc}
-//             alt={label}
-//             fill
-//             style={{ objectFit: 'contain' }}
-//             priority
-//           />
-//         </div>
-//         <div className={styles.label}>{label}</div>
-//       </button>
-
-//       {menuOpen && menuItems && (
-//         <div className={styles.menu}>
-//           {menuItems.map((item, index) => (
-//             <div
-//               key={index}
-//               className={styles.menuItem}
-//               onClick={() => {
-//                 item.onClick();
-//                 setMenuOpen(false);
-//               }}
-//             >
-//               {item.label}
-//             </div>
-//           ))}
-//         </div>
-//       )}
-//     </div>
-//   );
-// }

@@ -184,7 +184,7 @@ export default function MenuHeader() {
           >
             {[
               { label: "Informe dos rendimentos", href: "http://servicos.searh.rn.gov.br/searh/Dirf" },
-              { label: "Portal do servidor", href: "http://servicos.searh.rn.gov.br/searh/copag/contra_cheque.asp" },   //Trocar pelo site novo"  
+              { label: "Portal do servidor", href: "https://portaldoservidor.rn.gov.br/login" }, 
               { label: "Qualificação profissional", href: "http://pccr.saude.rn.gov.br/pccr/" },
               { label: "Novo PCCR/SESAP", href: "https://padlet.com/hospitalregionalrh/cartilha-servidor-hetff-q990zg8ick4zelqv/wish/2454003973" },
               { label: "Regime Jurídico Único", href: "https://leisestaduais.com.br/rn/lei-complementar-n-122-1994-rio-grande-do-norte-dispoe-sobre-o-regime-juridico-unico-dos-servidores-publicos-civis-do-estado-e-das-autarquias-e-fundacoes-publicas-estaduais-institui-o-respectivo-estatuto-e-da-outras-providencias?origin=instituicao" },
@@ -227,9 +227,9 @@ export default function MenuHeader() {
             }}
           >
             {[
-              { label: "CEAF", href: "" },
-              { label: "Hospitalar Interno", href: "" },
-              { label: "Painel Gestor", href: "" },
+              { label: "CEAF", href: "https://lookerstudio.google.com/reporting/150a2bc2-2ef9-4068-b0f1-58f703613c5a/page/YUDyD" },
+              { label: "Hospitalar Interno", href: "https://lookerstudio.google.com/u/0/reporting/b6bceaa2-37ce-4949-873c-8d4c48efcf93/page/p_atqfoutygd" },
+              { label: "Painel Gestor", href: "https://lookerstudio.google.com/reporting/1e0a4d56-07c0-443f-b1a7-e1b7d672172d" },
               ].map(({ label, href }) => (
                 <MenuItem
                   key={label}

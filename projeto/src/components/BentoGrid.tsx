@@ -34,7 +34,13 @@ export default function BentoGrid() {
               },
             },
             {
-              label: "Justificar ponto eventual",
+              label: "Justificar ponto",
+              onClick: () => {
+                window.open("https://biometria.saude.rn.gov.br/unicat/index.php?class=LoginForm", "_blank");
+              },
+            },
+            {
+              label: "Justificar eventual",
               onClick: () => {
                 window.open("https://biometria.saude.rn.gov.br/eventual/index.php?class=LoginForm", "_blank");
               },
@@ -55,7 +61,7 @@ export default function BentoGrid() {
               },
             },
             {
-              label: "Calculadora do plantão eventual",
+              label: "Calcular eventual",
               onClick: () => {
                 window.open("http://10.19.12.251/calculadora/", "_blank");
               },
@@ -63,7 +69,7 @@ export default function BentoGrid() {
              {
               label: "Organograma",
               onClick: () => {
-                window.open("http://10.19.12.251/calculadora/", "_blank");  //alterar link
+                window.open("https://www.canva.com/design/DAG2n3g_5CE/3g1nVm_5LRaZEs6wZFxvGQ/view?utm_content=DAG2n3g_5CE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd2c2e6e266", "_blank");
               },
             },
           ]}
@@ -162,7 +168,7 @@ export default function BentoGrid() {
               },
             },
             {
-              label: "Calculadora de medicamentos",
+              label: "Calcular medicamentos",
               onClick: () => {
                 window.open("http://10.19.12.251/multcalculadora/", "_blank");
               },
@@ -200,8 +206,8 @@ export default function BentoGrid() {
       {/* Painel */}
       <div className="col-start-7 col-span-6 row-span-2">
         <RectangleButtonExtraBig
-          iframeSrc="http://10.19.12.252/novosga-dashboard/index_atendimentos.html"
-          linkUrl="http://10.19.12.252/novosga-dashboard/index_atendimentos.html"
+          iframeSrc="http://10.19.12.252/novosga-dashboard/index_atendimentos_intra.html"
+          linkUrl="http://10.19.12.252/novosga-dashboard/index_atendimentos_intra.html"
         />
       </div>
 

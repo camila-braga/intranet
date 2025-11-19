@@ -24,7 +24,7 @@ export default function BentoGrid() {
       {/* Ponto */}
       <div className="col-span-4">
         <RectangleButtonBig 
-          iconSrc="/icon/bentoGrid/ponto.png" 
+          iconSrc="/intranet/icon/bentoGrid/ponto.png" 
           label="Controle de Ponto"
           menuItems={[
             {
@@ -87,7 +87,7 @@ export default function BentoGrid() {
       {/* HORUS */}
       <div className="col-start-3 col-span-2 row-start-2 row-span-2">
         <SquareButtonBig 
-          iconSrc="/icon/bentoGrid/horus.png" 
+          iconSrc="/intranet/icon/bentoGrid/horus.png" 
           label="HÓRUS" 
           link="https://scaweb.saude.gov.br/scaweb/"
         />
@@ -96,7 +96,7 @@ export default function BentoGrid() {
       {/* SEI */}
       <div className="col-span-2 row-start-3 row-span-2">
         <SquareButtonBig 
-          iconSrc="/icon/bentoGrid/sei.png" 
+          iconSrc="/intranet/icon/bentoGrid/sei.png" 
           label="SEI RN"
           menuItems={[
             {
@@ -124,7 +124,7 @@ export default function BentoGrid() {
       {/* Correio */}
       <div className="col-start-3 col-span-2 row-start-4">
         <RectangleButtonSmall 
-          iconSrc="/icon/bentoGrid/correio.png" 
+          iconSrc="/intranet/icon/bentoGrid/correio.png" 
           label="Correio" 
           menuItems={[
             {
@@ -146,7 +146,7 @@ export default function BentoGrid() {
       {/* CEAF */}
       <div className="col-start-5 col-span-2 row-span-2">
         <SquareButtonBig 
-          iconSrc="/icon/bentoGrid/ceaf.png" 
+          iconSrc="/intranet/icon/bentoGrid/ceaf.png" 
           label="CEAF" 
           menuItems={[
             {
@@ -180,7 +180,7 @@ export default function BentoGrid() {
       {/* SGA */}
       <div className="col-start-5 col-span-3 row-start-3">
         <RectangleButtonMedium 
-          iconSrc="/icon/bentoGrid/sga.png" 
+          iconSrc="/intranet/icon/bentoGrid/sga.png" 
           label="SGA"
           link="http://10.19.12.252/novosga/public/login"
         />
@@ -189,7 +189,7 @@ export default function BentoGrid() {
       {/* Transporte */}
       <div className="col-start-5 row-start-4">
         <SquareButtonSmall 
-          iconSrc="/icon/bentoGrid/transporte.png"
+          iconSrc="/intranet/icon/bentoGrid/transporte.png"
           link="https://sgt.saude.rn.gov.br/index.php?redirect=%2Fplugins%2Fformcreator%2Ffront%2Fformdisplay.php%3Fid%3D13&error=3"
         />
       </div>
@@ -197,7 +197,7 @@ export default function BentoGrid() {
       {/* SIPAC */}
       <div className="col-start-6 col-span-2 row-start-4">
         <RectangleButtonSmall 
-          iconSrc="/icon/bentoGrid/sipac.png" 
+          iconSrc="/intranet/icon/bentoGrid/sipac.png" 
           label="SIPAC"
           link="https://sipac.rn.gov.br/sipac/"
         />
@@ -214,7 +214,7 @@ export default function BentoGrid() {
       {/* GLPI */}
       <div className="col-start-8 col-span-2 row-start-3 row-span-2">
         <SquareButtonBig 
-          iconSrc="/icon/bentoGrid/glpi.png" 
+          iconSrc="/intranet/icon/bentoGrid/glpi.png" 
           label="GLPI"
           link="http://10.19.12.251/glpi/"
         />
@@ -223,7 +223,7 @@ export default function BentoGrid() {
       {/* SGH */}
       <div className="col-start-10 col-span-3 row-start-3">
         <RectangleButtonMedium 
-          iconSrc="/icon/bentoGrid/sgh.png" 
+          iconSrc="/intranet/icon/bentoGrid/sgh.png" 
           label="SGH"
           link="https://farmacia.sgh.saude.rn.gov.br/"
         />
@@ -248,7 +248,7 @@ export default function BentoGrid() {
       {/* TV */}
       <div className="col-start-12 row-start-4">
         <SquareButtonSmall 
-          iconSrc="/icon/bentoGrid/tv.png"
+          iconSrc="/intranet/icon/bentoGrid/tv.png"
           link="http://10.19.12.252/painel-web-master/"
         />
       </div>

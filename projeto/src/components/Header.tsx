@@ -135,7 +135,7 @@ export default function MenuHeader() {
         {/* Logo */}
         <div>
           <Image
-            src="/icon/header/logo.png"
+            src="/intranet/icon/header/logo.png"
             alt="Logo"
             width={318}
             height={106}
